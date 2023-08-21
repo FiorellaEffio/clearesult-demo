@@ -20,6 +20,11 @@ const routes = [
     name: 'component-communication-with-emit',
     component: () => import(/* webpackChunkName: "about" */ '../views/ComponentCommunicationEmit.vue')
   },
+  {
+    path: '/watcher-usage',
+    name: 'watcher-usage',
+    component: () => import(/* webpackChunkName: "about" */ '../views/WatcherUsage.vue')
+  }
 ]
 
 const router = createRouter({
