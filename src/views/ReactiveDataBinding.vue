@@ -1,15 +1,15 @@
 <script setup>
-import { reactive, ref } from 'vue'
+  import { reactive, ref } from 'vue'
 
-const counter = ref(0)
-const incrementCounterRef = () => {
-  counter.value++;
-}
+  const counter = ref(0)
+  const incrementCounterRef = () => {
+    counter.value++;
+  }
 
-const state = ref({counter: 0})
-const incrementCounterReactive = () => {
-  state.value.counter++;
-}
+  const state = reactive({counter: 0})
+  const incrementCounterReactive = () => {
+    state.counter++;
+  }
 
 </script>
 

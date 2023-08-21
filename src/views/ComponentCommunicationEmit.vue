@@ -1,14 +1,13 @@
 <script setup>
-import { reactive, ref } from 'vue'
-import ChildComponentEmit from '@/components/ChildComponentEmit.vue';
-const counter = ref(0)
-const incrementCounterRef = () => {
-  counter.value++;
-}
-const resetCounter = () => {
-  counter.value = 0;
-}
-
+  import { reactive, ref } from 'vue'
+  import ChildComponentEmit from '@/components/ChildComponentEmit.vue';
+  const counter = ref(0)
+  const incrementCounterRef = () => {
+    counter.value++;
+  }
+  const resetCounter = () => {
+    counter.value = 0;
+  }
 </script>
 
 <template>
