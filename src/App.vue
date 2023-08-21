@@ -1,7 +1,8 @@
 <template>
   <nav>
     <router-link to="/">Reactive Data Binding</router-link> |
-    <router-link to="/component-communication">Component Communication</router-link>
+    <router-link to="/component-communication">Component Communication</router-link> |
+    <router-link to="/component-communication-with-emit">Component Communication with Emit</router-link>
   </nav>
   <router-view/>
 </template>

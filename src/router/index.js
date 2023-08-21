@@ -15,6 +15,11 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/ComponentCommunication.vue')
   },
+  {
+    path: '/component-communication-with-emit',
+    name: 'component-communication-with-emit',
+    component: () => import(/* webpackChunkName: "about" */ '../views/ComponentCommunicationEmit.vue')
+  },
 ]
 
 const router = createRouter({
