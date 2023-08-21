@@ -12,19 +12,17 @@ const resetCounter = () => {
 </script>
 
 <template>
-  <!--
-    - Component Communication with emit:
-    Create a Vue 3 parent-child component setup. 
-    The parent component should have a button that increments a counter when clicked. 
-    The child component should display the counter value received from the parent and have a button to reset the counter back to zero. 
-    Implement communication between the child and parent components using the emit function.
-  -->
-  <h1>component communication with emit</h1>
-  <div class="flex flex-col">
-    <div>
-      <p>Counter is: {{ counter }}</p>
-      <ChildComponentEmit :counter="counter" @reset-counter="resetCounter"/>
-      <button @click="incrementCounterRef">Increment by 1 Ref</button>
+  <div class="bg-white p-4 rounded-md max-w-3xl mx-auto w-11/12">
+    <h1 class="font-bold text-left mb-4">Component communication (EMIT)</h1>
+    <div class="border-indigo-100 mx-auto border-2 rounded-md sm:w-6/12 p-4">
+      <ChildComponentEmit :counter="counter" @reset-counter="resetCounter">
+        <button
+          class="bg-transparent hover:bg-blue-500 w-full text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded mr-1"
+          @click="incrementCounterRef"
+        >
+          Increment by 1 Ref
+        </button>
+      </ChildComponentEmit>
     </div>
   </div>
 </template>
