@@ -1,11 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Reactive Data Binding</router-link> |
-    <router-link to="/component-communication">Component Communication</router-link> |
-    <router-link to="/component-communication-with-emit">Component Communication with Emit</router-link> |
-    <router-link to="/watcher-usage">Watcher Usage</router-link>
-  </nav>
-  <router-view/>
+  <div class="h-screen bg-slate-200">
+    <nav class="bg-black text-slate-400 h-fit py-3">
+      <router-link to="/" class="text-inherit">Reactive Data Binding</router-link> |
+      <router-link to="/component-communication" class="text-inherit">Component Communication</router-link> |
+      <router-link to="/component-communication-with-emit" class="text-inherit">Component Communication with Emit</router-link> |
+      <router-link to="/watcher-usage" class="text-inherit">Watcher Usage</router-link>
+    </nav>
+    <div class="py-6 px-4 h-fit flex">
+      <router-view/>
+    </div>
+  </div>
 </template>
 
 <style>
